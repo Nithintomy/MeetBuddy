@@ -1,12 +1,12 @@
 import express from 'express'
-import {getFeedPosts,getUserPosts,likePost} from '../Controllers/post.js'
+import {getFeedPosts,getUserPost,likePost} from '../Controllers/post.js'
 import { verifyToken } from '../middleware/auth.js'
 
 const router =express.Router()
 
 
 router.get('/',verifyToken,getFeedPosts)
-router.get('/:userId/posts',verifyToken,getUserPosts)
+router.get('/:userId/posts',verifyToken,getUserPost)
 
 /*UPDATE*/
 router.patch("/:id/like",verifyToken,likePost)

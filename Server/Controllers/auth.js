@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import User from '../Models/UserModel'
+import User from '../Models/UserModel.js'
 
 
 /*User Register*/

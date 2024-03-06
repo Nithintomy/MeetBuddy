@@ -1,5 +1,5 @@
 import express from 'express'
-import {getUser,getUserFriends,addRemoveFriend} from './Controllers/userController.js'
+import {getUser,getUserFriends,addRemoveFriend} from '../Controllers/userController.js'
 import { verifyToken } from '../middleware/auth.js'
 
 
