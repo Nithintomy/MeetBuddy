@@ -65,7 +65,13 @@ mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
-    console.log(`Server is Running on ${PORT}`);
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+      });
+      
+//    User.insertMany(users)
+//    Post.insertMany(posts)
+
 }).catch((err) => {
     console.error('Error occurred while connecting to MongoDB:', err);
 });
