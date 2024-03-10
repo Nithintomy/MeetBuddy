@@ -47,5 +47,5 @@ export const authSlice = createSlice({
 
 })
 
-
+export const { reducer: authReducer } = authSlice; 
 export const {setMode,setLogin,setFriends,setLogout,setPost,setPosts} = authSlice.actions
