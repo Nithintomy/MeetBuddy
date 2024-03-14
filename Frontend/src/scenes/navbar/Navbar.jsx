@@ -55,9 +55,10 @@ function Navbar() {
           <Help sx={{ fontSize: "25px" }} />
           <FormControl variant='standard' value={fullName}>
             <Select value={fullName} sx={{ backgroundColor: neutralLight, width: "150px", borderRadius: "0.25rem", p: "0.25rem 1rem" }}
-              input={<InputBase />}
+              input={<InputBase />} 
             >
-              <MenuItem value={fullName}>
+              <MenuItem val
+              ue={fullName}>
                 <Typography>
                   {fullName}
                 </Typography>
